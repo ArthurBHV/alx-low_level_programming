@@ -5,11 +5,13 @@
  * @s: string to be reversed
  * Return: no return.
  */
+void _putchar(char c);
+
 void _print_rev_recursion(char *s)
 {
 	if (*s != '\0')
 	{
 		_print_rev_recursion(s + 1);
-		putchar(*s);
+		_putchar(*s);
 	}
 }
