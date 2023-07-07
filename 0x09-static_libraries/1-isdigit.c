@@ -1,11 +1,9 @@
 #include "main.h"
-
 /**
-* _isdigit - returns 1 if c is uppercase
-* @c: integer
-* Return: 1 if c is uppercase or 0
-*/
-
+ * _isdigit - check for a digit from 0 throug to 9
+ * @c: number to check
+ * Return: if c is a digit and returns 0 otherwise
+ */
 int _isdigit(int c)
 {
 	if (c >= '0' && c <= '9')
@@ -14,6 +12,6 @@ int _isdigit(int c)
 	}
 		else
 	{
-	return (0);
-}
+		return (0);
+	}
 }
