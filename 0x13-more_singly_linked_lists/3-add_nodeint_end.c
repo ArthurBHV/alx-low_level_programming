@@ -5,30 +5,30 @@
  * @n: data to insert in the new element
  * @head: pointer
  *
- * Return: pointer to the new node, or NULL if it fails
+ * Return: the address of the new element, or NULL if it failed
  */
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
-	listint_t *new;
+	listint_t *node;
 	listint_t *temp = *head;
 
-	new = malloc(sizeof(listint_t));
-	if (!new)
+	node = malloc(sizeof(listint_t));
+	if (!node)
 		return (NULL);
 
-	new->n = n;
-	new->next = NULL;
+	node->n = n;
+	node->next = NULL;
 
 	if (*head == NULL)
 	{
-		*head = new;
-		return (new);
+		*head = node;
+		return (node);
 	}
 
 	while (temp->next)
 		temp = temp->next;
 
-	temp->next = new;
+	temp->next = node;
 
-	return (new);
+	return (node);
 }
