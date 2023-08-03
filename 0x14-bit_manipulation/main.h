@@ -1,6 +1,5 @@
 #define MAIN_H
 #ifndef MAIN_H
-
 #include <stdio.h>
 
 unsigned int binary_to_uint(const char *b);
