@@ -8,7 +8,6 @@
  */
 unsigned int binary_to_uint(const char *b);
 
-
 int main(void)
 {
 unsigned int n;
